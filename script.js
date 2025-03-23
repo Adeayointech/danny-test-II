@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
             // Remove active class from all nav items
             navItems.forEach(nav => nav.classList.remove("active"));
             
-            // Add active class to clicked item
+            
             this.classList.add("active");
             
-            // Toggle submenu visibility
+            
             const menu = this.nextElementSibling;
             if (menu && menu.classList.contains("submenu")) {
                 const isVisible = menu.style.display === "block";
