@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.search-icon {
+    margin-right: 8px;
+}
+
+.search-box {
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+nav{
+    margin-bottom: 12em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li:hover {
+    color: orange;
+}
+
+.nav-item.active {
+    background: #d3d3d3;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+.nav-item.active + .submenu {
+    display: block;
+}
+
+.sidebar-footer p {
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-footer p::before {
+    content: '\1F4BE'; /* Example icon for saved items */
+    margin-right: 8px;
+}
+
+.sidebar-footer p:nth-child(2)::before {
+    content: '\2753'; /* Example icon for help centre */
+}
+
+.sidebar-footer p:nth-child(3)::before {
+    content: '\2709'; /* Example icon for feedback */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card >p {
+    margin: 0 0; /* Reduce spacing between text elements */
+    font-size: 14px; /* Adjust font size if needed */
+    line-height: 0.2; /* Reduce line spacing */
+}
+
+.product-card span {
+    font-size: 10px; /* Adjust font size if needed */
+    color: gray;
+}
+
