@@ -82,16 +82,16 @@ nav ul li:hover {
 }
 
 .sidebar-footer p::before {
-    content: '\1F4BE'; /* Example icon for saved items */
+    content: '\1F4BE'; 
     margin-right: 8px;
 }
 
 .sidebar-footer p:nth-child(2)::before {
-    content: '\2753'; /* Example icon for help centre */
+    content: '\2753'; 
 }
 
 .sidebar-footer p:nth-child(3)::before {
-    content: '\2709'; /* Example icon for feedback */
+    content: '\2709'; 
 }
 
 .content {
@@ -130,13 +130,13 @@ h2 {
 }
 
 .product-card >p {
-    margin: 0 0; /* Reduce spacing between text elements */
-    font-size: 14px; /* Adjust font size if needed */
-    line-height: 0.2; /* Reduce line spacing */
+    margin: 0 0; 
+    font-size: 14px; 
+    line-height: 0.2; 
 }
 
 .product-card span {
-    font-size: 10px; /* Adjust font size if needed */
+    font-size: 10px; 
     color: gray;
 }
 
